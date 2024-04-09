@@ -54,7 +54,7 @@ public class UserRegController {
 	@PostMapping
 	public String saveUser(@RequestParam(name="roles")String[] roles,
 			@ModelAttribute("user")UserRegDto userRegDto){
-		System.out.println(roles[0]+" "+roles.length);
+//		System.out.println(roles[0]+" "+roles.length);
 		User user=new User();
 		user.setFirstName(userRegDto.getFirstName());
 		user.setLastName(userRegDto.getLastName());

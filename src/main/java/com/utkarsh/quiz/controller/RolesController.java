@@ -27,6 +27,6 @@ public class RolesController {
 	@PostMapping
 	public String saveRoles(@ModelAttribute("roleOb")Roles role) {
 		rolesService.addRole(role);
-		return "index";
+		return "redirect:login?role";
 	}
 }

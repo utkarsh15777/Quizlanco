@@ -62,8 +62,8 @@ public class QuizShowController {
 	public String calculateResult(@ModelAttribute("qandalist")WrapperList wrapper,Model model,@RequestParam("subject")String subName) {
 		int score=0;
 		for(SelectedAnswer obj:wrapper.getSelA()) {
-			System.out.println(obj.getChoosenAns());
-			System.out.println(obj.getCorrectAns());
+//			System.out.println(obj.getChoosenAns());
+//			System.out.println(obj.getCorrectAns());
 			if(obj.getCorrectAns().equals(obj.getChoosenAns())) {
 				score++;
 			}
